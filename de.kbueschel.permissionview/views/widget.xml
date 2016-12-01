@@ -1,0 +1,35 @@
+<Alloy>
+
+	<Window id="window" class="invisible permissionView__container" onOpen="show" onClose="cleanup">
+
+		<View id="overlay" class="black-opaque top permissionView__overlay">
+
+			<View class="permissionView__content">
+
+				<View class="permissionView__imageContainer">
+
+					<ImageView id="image" class="permissionView__image" />
+
+				</View>
+
+				<View class="permissionView__descriptionContainer">
+
+					<Label id="title" class="permissionView__title" />
+					<Label id="description" class="permissionView__description" />
+
+				</View>
+
+				<View class="permissionView__buttonContainer">
+
+					<Button id="cancel" class="button button--cancel" onClick="handleClick" />
+					<Button id="allow" class="button button--allow" onClick="handleClick" />
+
+				</View>
+
+			</View>
+
+		</View>
+
+	</Window>
+
+</Alloy>

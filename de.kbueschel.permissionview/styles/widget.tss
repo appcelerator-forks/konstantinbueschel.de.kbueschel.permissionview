@@ -1,0 +1,142 @@
+'.permissionView__container': {
+
+	navBarHidden: true,
+	backgroundColor: 'transparent'
+},
+
+
+'.permissionView__overlay': {
+
+	zIndex: 5
+},
+
+
+'.permissionView__content': {
+
+	width: 270,
+	height: Ti.UI.SIZE,
+
+	layout: 'vertical',
+
+	backgroundColor: '#ffffff',
+	borderRadius: 16
+},
+
+
+'.permissionView__imageContainer': {
+
+	width: 112,
+	height: 112,
+
+	top: 22,
+	bottom: 22,
+
+	borderRadius: 56,
+	borderWidth: 1,
+	borderColor: '#e8e8e8',
+
+	backgroundColor: '#e8e8e8'
+},
+
+
+'.permissionView__image': {
+
+	width: 84,
+	height: 84,
+
+	borderRadius: 42,
+	borderWidth: 0,
+
+	backgroundColor: '#12c48b',
+
+	backgroundGradient: {
+
+		type: 'linear',
+
+		startPoint: { x: '60%', y: '0%' },
+		endPoint: { x: '60%', y: '100%' },
+
+		colors: [
+			{color: '#00ffffff', offset: 0},
+			{color: '#33000000', offset: 1.0}
+		]
+	}
+},
+
+
+'.permissionView__descriptionContainer': {
+
+	height: Ti.UI.SIZE,
+
+	right: 18,
+	bottom: 42,
+	left: 18,
+
+	layout: 'vertical',
+},
+
+
+'.permissionView__title': {
+
+	bottom: 16,
+
+	color: Alloy.CFG.colors.text,
+	font: {
+
+		fontSize: 18,
+		fontWeight: 'bold'
+	}
+},
+
+
+'.permissionView__title[platform=ios]': {
+
+	minimumFontSize: 14
+},
+
+
+'.permissionView__description': {
+
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+
+	font: {
+
+		fontSize: 12
+	}
+},
+
+
+'.permissionView__buttonContainer': {
+
+	height: 36,
+
+	right: 18,
+	bottom: 12,
+	left: 18
+},
+
+
+'.button': {
+
+	width: Ti.UI.SIZE,
+	height: 36,
+	borderRadius: 18
+},
+
+
+'.button--cancel': {
+
+	left: 0,
+
+	color: 'white',
+	backgroundColor: '#b1bfc7'
+},
+
+
+'.button--allow': {
+
+	right: 0,
+
+    color: '#ffffff',
+    backgroundColor: '#12c48b'
+},
